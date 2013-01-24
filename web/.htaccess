@@ -1,0 +1,21 @@
+RewriteEngine on
+
+
+##########################################
+# Necess�rio quando existe crossdomain
+##########################################
+#RewriteCond %{REQUEST_URI} !^/crossdomain.xml$
+
+
+##########################################
+# Necess�rio quando existe static
+##########################################
+RewriteCond $1 !^(index\.php|static|files)
+
+
+##########################################
+# Necess�rio para remover index.php da url
+##########################################
+RewriteRule ^(.*)$ index.php?/$1 [L]
+
+

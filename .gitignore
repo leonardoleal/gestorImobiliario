@@ -3,3 +3,10 @@
 */logs/!index.html
 */cache/*
 */cache/!index.html
+da/
+docs/
+tdd/
+triagem/
+*/.project
+*/.buildpath
+*/.settings/
